@@ -1,0 +1,34 @@
+<mat-card *ngFor="let course of courses" class="course-card mat-elevation-z10">
+
+  <mat-card-header>
+
+    <!--mat-card-title>{{course.description}}</mat-card-title-->
+
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="course-card-list">
+
+      <div class="course-logo">
+        <img [src]="course.iconUrl" alt="Course logo">
+      </div>
+      <div class="course-info">
+        <h4 class="headline-text">{{course.name}}</h4>
+        <p>{{course.description}}</p>
+      </div>
+      <div>
+        <button mat-button class="mat-raised-button mat-primary" [routerLink]="['/courses', course.id]">
+          Go to Course
+        </button>
+      </div>
+
+    </div>
+  </mat-card-content>
+
+  <!--mat-card-actions class="course-actions">
+
+ 
+
+  </mat-card-actions-->
+
+</mat-card>

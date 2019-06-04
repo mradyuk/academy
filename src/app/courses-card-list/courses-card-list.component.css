@@ -1,0 +1,46 @@
+
+
+.course-card {
+    margin: 20px 10px;
+    width: 700px;
+    height: 170px;
+}
+
+.course-card-list{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.course-info{
+    min-width: 400px;  
+}
+
+.headline-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: OpenSans,Arial,sans-serif;
+    font-weight: 400;
+}
+
+.course-actions {
+    text-align: center;
+}
+
+.course-logo{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin-right: 15px;
+}
+
+img{
+
+    max-width: 80px;
+    max-height: 80px;
+    vertical-align: middle;
+}
