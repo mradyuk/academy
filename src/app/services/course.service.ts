@@ -2,6 +2,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
+import { filter, concatMap, map } from 'rxjs/operators';
+//import 'rxjs/add/observable/from';
+import { Course } from '../model/classes';
+
 
 
 @Injectable()
@@ -14,6 +18,20 @@ export class CourseService {
 
     loadCourses(url: string): Observable<any> {
         return this.http.get(url);
+
+    }
+
+    loadCourseById(url: string, courseId: string): Observable<any> {
+
+        return this.http.get(url)
+            /*   .pipe(
+                   filter((ev: Course) =>
+                       ev.id === courseId
+                   )
+               );*/
+            .pipe(
+                map((courses: Course[]) => courses.filter(course => course.id === courseId)[0])
+            );
 
     }
 

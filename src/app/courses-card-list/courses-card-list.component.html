@@ -17,7 +17,7 @@
         <p>{{course.description}}</p>
       </div>
       <div>
-        <button mat-button class="mat-raised-button mat-primary" [routerLink]="['/courses', course.id]">
+        <button mat-button class="mat-raised-button mat-primary" (click)="navigate(course.id)"> <!-- [routerLink]="['/courses', course.id]" -->
           Go to Course
         </button>
       </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import {Course} from '../model/classes';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'courses-card-list',
@@ -12,9 +13,14 @@ export class CoursesCardListComponent implements OnInit {
   @Input()
   courses: Course[];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+
+  }
+
+  navigate(id: string){
+    this.router.navigate(['/courses', id])
   }
 
 }

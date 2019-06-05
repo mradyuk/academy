@@ -2,7 +2,7 @@
     {
         "id": "course-1",
         "name": "Course 1",
-        "description": "Angular Component Testing",
+        "description": "Angular Component Testing - 1",
         "category": "Beginners",
         "iconUrl": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/64/cf55504c5511e7a29645295de982d7/01-Yandex-330.jpg?auto=format%2Ccompress&dpr=1&w=80&h=80&fit=fill&bg=FFF",
         "lessons": [
@@ -51,14 +51,14 @@
         "iconUrl": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/83/e258e0532611e5a5072321239ff4d4/jhep-coursera-course4.png?auto=format%2Ccompress&dpr=2&w=80&h=80&fit=fill&bg=FFF",
         "lessons": [
             {
-                "description": "Testing Angular Smart or Container Components - Test Setup",
+                "description": "Testing Angular Smart or Container Components - Test Setup -2",
                 "name": "Angular Testing Course",
                 "duration": "180",
                 "module": "angular-testing-container-components",
                 "videoUrl": "https://player.vimeo.com/video/335359151"
             },
             {
-                "description": "Angular Component Testing - Course Card List Test Suite Conclusion",
+                "description": "Angular Component Testing - Course Card List Test Suite Conclusion -2",
                 "name": "Angular Testing Course",
                 "duration": "170",
                 "module": "angular-testing--course-card-list-conclusion",

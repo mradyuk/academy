@@ -38,13 +38,15 @@ import { CourseContentComponent } from './course-content/course-content.componen
 import { CourseLessonComponent } from './course-lesson/course-lesson.component';
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 import { CourseService } from './services/course.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseContentComponent,
     CourseLessonComponent,
-    CoursesCardListComponent
+    CoursesCardListComponent,
+    HomeComponent
   ],
   imports: [
 
