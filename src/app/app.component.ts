@@ -11,14 +11,15 @@ import { CourseService } from './services/course.service';
 export class AppComponent implements OnInit {
   title = '';
 
-  courses$: Observable<Course[]>;
+//  courses$: Observable<Course[]>;
 
   constructor(private courseService: CourseService) {
   }
 
   ngOnInit() {
 
-    this.courses$ = this.courseService.loadCourses('./assets/courses.json');
+    //this.courses$ = this.courseService.loadCourses('./assets/courses.json');
+    this.courseService.init();
 
   }
 }

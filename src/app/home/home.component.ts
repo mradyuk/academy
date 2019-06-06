@@ -18,7 +18,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    this.courses$ = this.courseService.loadCourses('./assets/courses.json');
+  //  this.courses$ = this.courseService.loadCourses('./assets/courses.json');
+
+  this.courses$ =  this.courseService.courses$;
 
   }
 }

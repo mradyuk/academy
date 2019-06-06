@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 import { filter, concatMap, map } from 'rxjs/operators';
@@ -12,8 +12,26 @@ import { Course } from '../model/classes';
 export class CourseService {
 
 
+    private subject = new BehaviorSubject<Course[]>([]);
+    courses$: Observable<Course[]> = this.subject.asObservable();
+
+
     constructor(private http: HttpClient) {
 
+    }
+
+    init() {
+
+        this.http.get('./assets/courses.json').subscribe(
+            (courses: Course[]) => this.subject.next(courses)
+        );
+    }
+
+    getCourseContent(courseId: string) {
+        return this.courses$.pipe(
+            map((courses: Course[]) => courses.find(course => course.id === courseId)),
+            filter(course => !!course)
+        );
     }
 
     loadCourses(url: string): Observable<any> {

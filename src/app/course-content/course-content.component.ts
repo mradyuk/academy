@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { Lesson, Course } from '../model/classes';
 import { CourseService } from '../services/course.service';
 import { ActivatedRoute } from '@angular/router';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'course-content',
@@ -23,7 +24,11 @@ export class CourseContentComponent implements OnInit {
       this.courseId = params.get('id')
     })
 
-    this.courseService.loadCourseById('./assets/courses.json', this.courseId).subscribe((course: Course) => {
+    /* this.courseService.loadCourseById('./assets/courses.json', this.courseId).subscribe((course: Course) => {
+       this.lessons = course.lessons;
+     });*/
+
+    this.courseService.getCourseContent(this.courseId).pipe(first()).subscribe((course: Course) => {
       this.lessons = course.lessons;
     });
   }
