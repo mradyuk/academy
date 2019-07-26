@@ -1,0 +1,66 @@
+<div class="course">
+
+        <mat-horizontal-stepper [linear]="false" #stepper>
+          <mat-step>
+            <ng-template matStepLabel>Start</ng-template>
+          </mat-step>
+          <ng-container *ngFor="let section of course.section">
+            <mat-step>
+              <ng-template matStepLabel>{{section.name}}</ng-template>
+            </mat-step>
+          </ng-container>
+          <mat-step>
+            <ng-template matStepLabel>Finish</ng-template>
+          </mat-step>
+        </mat-horizontal-stepper>
+      
+        <mat-expansion-panel [expanded]="false">
+          <mat-expansion-panel-header>
+            <mat-panel-title></mat-panel-title>
+            <mat-panel-description>
+              <b>Learning Objectives</b>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="learning-obj">
+            <p>Refactoring from Anemic Domain Model Towards a Rich One.</p>
+            <p>Building bullet-proof business line applications is a complex task.
+              This course will teach you an in-depth guideline into refactoring
+              from Anemic Domain Model into a rich, highly encapsulated one.</p>
+          </div>
+        </mat-expansion-panel>
+        <br>
+        <br>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>{{course.name}}</mat-panel-title>
+            <mat-panel-description><b>{{course.description}}</b></mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <ng-container *ngFor="let section of course.section">
+            <mat-card>
+              <h3>{{section.name}}</h3>
+              <table class="lessons-table" *ngIf="section.lessons">
+      
+                <!--thead>
+                <th>#</th>
+                <th>Description</th>
+                <th>Duration</th>
+              </thead-->
+      
+                <tr *ngFor="let lesson of section.lessons">
+                  <td class="seqno-cell">
+                    <svg viewBox="0 0 100 100" fill="#1F8354" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="50" r="10" />
+                    </svg>
+                  </td>
+                  <td class="description-cell">{{lesson.description}}</td>
+                  <td class="duration-cell">{{lesson.duration}} m</td>
+                </tr>
+      
+              </table>
+            </mat-card>
+          </ng-container>
+      
+      
+        </mat-expansion-panel>
+      </div>
