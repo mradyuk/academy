@@ -1,12 +1,23 @@
 <div class="course">
   <div>
-    
+    <mat-horizontal-stepper [linear]="false" #stepper>
+      <mat-step>
+        <ng-template matStepLabel>Start</ng-template>
+      </mat-step>
+      <ng-container *ngFor="let section of course.sections"></ng-container>
+      <mat-step>
+        <ng-template matStepLabel>{{section.name}}</ng-template>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Finish</ng-template>      
+      </mat-step>
+    </mat-horizontal-stepper>
   </div>
   <mat-expansion-panel [expanded]="false">
     <mat-expansion-panel-header>
       <mat-panel-title></mat-panel-title>
       <mat-panel-description>
-          <b>Learning Objectives</b>
+        <b>Learning Objectives</b>
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="learning-obj">
