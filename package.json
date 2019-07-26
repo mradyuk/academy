@@ -27,7 +27,7 @@
     "web-animations-js": "2.3.2",
     "@angular/animations": "8.0.0",
     "@angular/platform-browser": "8.0.0",
-    "angular-in-memory-web-api": "0.5.4",
+    "angular-in-memory-web-api": "0.8.0",
     "@angular/material-moment-adapter": "8.1.1",
     "@angular/platform-browser-dynamic": "8.0.0"
   },
