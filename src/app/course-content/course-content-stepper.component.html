@@ -1,0 +1,42 @@
+<div class="course">
+
+        <mat-horizontal-stepper [linear]="false" #stepper>
+          <mat-step>
+            <ng-template matStepLabel>Start</ng-template>
+            <br>
+            <br>
+            <div class="learning-obj">
+              <p>Refactoring from Anemic Domain Model Towards a Rich One.</p>
+              <p>Building bullet-proof business line applications is a complex task.
+                This course will teach you an in-depth guideline into refactoring
+                from Anemic Domain Model into a rich, highly encapsulated one.</p>
+            </div>
+          </mat-step>
+          <ng-container *ngFor="let section of course.section">
+            <mat-step>
+              <ng-template matStepLabel>{{section.name}}</ng-template>
+              <br>
+              <br>
+              <mat-card>
+                <h3>{{section.name}}</h3>
+                <table class="lessons-table" *ngIf="section.lessons">
+      
+                  <tr *ngFor="let lesson of section.lessons">
+                    <td class="seqno-cell">
+                      <svg viewBox="0 0 100 100" fill="#1F8354" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="50" r="10" />
+                      </svg>
+                    </td>
+                    <td class="description-cell">{{lesson.description}}</td>
+                    <td class="duration-cell">{{lesson.duration}} m</td>
+                  </tr>
+      
+                </table>
+              </mat-card>
+            </mat-step>
+          </ng-container>
+          <mat-step>
+            <ng-template matStepLabel>Finish</ng-template>
+          </mat-step>
+        </mat-horizontal-stepper>
+      </div>

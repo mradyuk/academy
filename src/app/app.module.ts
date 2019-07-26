@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import {
+  MatStepperModule,
   MatDateFormats,
   MatCardModule,
   MatAutocompleteModule,
@@ -59,6 +60,7 @@ import { HomeComponent } from './home/home.component';
 
     BrowserAnimationsModule,
     // Material
+    MatStepperModule,
     MatCardModule,
     MatAutocompleteModule,
     MatButtonModule,

@@ -6,6 +6,13 @@ export class Course {
     iconUrl: string;
     category: string;
     releaseDate?: Date;
+    section: Section[];
+
+}
+
+export class Section {
+    id: string;
+    name: string;
     lessons: Lesson[];
 }
 

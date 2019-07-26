@@ -71,14 +71,14 @@
                         "name": "Angular Testing Course",
                         "duration": "180",
                         "module": "angular-testing-container-components",
-                        "videoUrl": "https://player.vimeo.com/video/335359151",
+                        "videoUrl": "https://player.vimeo.com/video/335359151"
                     },
                     {
                         "description": "Angular Component Testing - Course Card List Test Suite Conclusion -2",
                         "name": "Angular Testing Course",
                         "duration": "170",
                         "module": "angular-testing--course-card-list-conclusion",
-                        "videoUrl": "https://player.vimeo.com/video/335090054",
+                        "videoUrl": "https://player.vimeo.com/video/335090054"
                     }
                 ]
             },
@@ -91,14 +91,14 @@
                         "name": "Angular Testing Course",
                         "duration": "160",
                         "module": "angular-testing-debugging",
-                        "videoUrl": "https://player.vimeo.com/video/335085214",
+                        "videoUrl": "https://player.vimeo.com/video/335085214"
                     },
                     {
                         "description": "Angular Component Testing - DOM Interaction",
                         "name": "Angular Testing Course",
                         "duration": "150",
                         "module": "angular-testing-dom-interaction",
-                        "videoUrl": "https://player.vimeo.com/video/335082422",
+                        "videoUrl": "https://player.vimeo.com/video/335082422"
                     }
                 ]
             },
@@ -111,7 +111,7 @@
                         "name": "Angular Testing Course",
                         "duration": "140",
                         "module": "angular-testing-async-test-utility",
-                        "videoUrl": "https://player.vimeo.com/video/333732584",
+                        "videoUrl": "https://player.vimeo.com/video/333732584"
                     }
                 ]
             }
