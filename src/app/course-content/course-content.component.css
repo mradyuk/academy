@@ -1,14 +1,16 @@
-
 .course {
     text-align: center;
-    max-width: 450px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.course-thumbnail {
-    width: 150px;
-    margin: 20px auto 0 auto;
-    display: block;
+.learning-obj {
+    text-align: left;
+}
+
+.seqno-cell {
+    width: 40px;
+    align-items: center;
 }
 
 .description-cell {
@@ -18,6 +20,7 @@
 
 .duration-cell {
     text-align: center;
+    width: 50px;
 }
 
 .duration-cell mat-icon {
@@ -26,30 +29,26 @@
     font-size: 20px;
 }
 
-
 .lessons-table {
     min-height: 360px;
     margin-top: 10px;
 }
 
-
-
 .search-bar {
     margin-top: 20px;
 }
-
 
 .lessons-table tr {
     height: 60px;
 }
 
 .lessons-table td {
-    border-top: 1px solid  rgba(0,0,0,.12);
+    border-top: 1px solid rgba(0, 0, 0, .12);
 }
 
 .lessons-table th {
     padding: 20px;
-    color: rgba(0,0,0,.54);
+    color: rgba(0, 0, 0, .54);
 }
 
 .lessons-table td {

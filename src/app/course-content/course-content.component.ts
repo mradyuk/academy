@@ -12,8 +12,10 @@ import { first } from 'rxjs/operators';
 })
 export class CourseContentComponent implements OnInit {
 
-  lessons: Lesson[];
+  //  lessons: Lesson[];
   courseId: string;
+  // courseTitle: string;
+  course: Course;
 
   constructor(private courseService: CourseService,
     private route: ActivatedRoute) { }
@@ -24,12 +26,14 @@ export class CourseContentComponent implements OnInit {
       this.courseId = params.get('id')
     })
 
-    /* this.courseService.loadCourseById('./assets/courses.json', this.courseId).subscribe((course: Course) => {
+
+    /* this.courseService.getCourseContent(this.courseId).pipe(first()).subscribe((course: Course) => {
        this.lessons = course.lessons;
+       this.courseTitle = course.name;
      });*/
 
     this.courseService.getCourseContent(this.courseId).pipe(first()).subscribe((course: Course) => {
-      this.lessons = course.lessons;
+      this.course = course;
     });
   }
 

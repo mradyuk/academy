@@ -33,6 +33,7 @@ export class CourseService {
             filter(course => !!course)
         );
     }
+ 
 
     loadCourses(url: string): Observable<any> {
         return this.http.get(url);

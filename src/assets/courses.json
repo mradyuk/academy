@@ -5,41 +5,53 @@
         "description": "Angular Component Testing - 1",
         "category": "Beginners",
         "iconUrl": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/64/cf55504c5511e7a29645295de982d7/01-Yandex-330.jpg?auto=format%2Ccompress&dpr=1&w=80&h=80&fit=fill&bg=FFF",
-        "lessons": [
+        "section": [
             {
-                "description": "Testing Angular Smart or Container Components - Test Setup",
-                "name": "Angular Testing Course",
-                "duration": "180",
-                "module": "angular-testing-container-components",
-                "videoUrl": "https://player.vimeo.com/video/335359151"
+                "id": 1,
+                "name": "Topic 1",
+                "lessons": [
+                    {
+                        "description": "Testing Angular Smart or Container Components - Test Setup",
+                        "name": "Angular Testing Course",
+                        "duration": "180",
+                        "module": "angular-testing-container-components",
+                        "videoUrl": "https://player.vimeo.com/video/335359151"
+                    },
+                    {
+                        "description": "Angular Component Testing - Course Card List Test Suite Conclusion",
+                        "name": "Angular Testing Course",
+                        "duration": "170",
+                        "module": "angular-testing--course-card-list-conclusion",
+                        "videoUrl": "https://player.vimeo.com/video/335090054"
+                    }
+                ]
             },
             {
-                "description": "Angular Component Testing - Course Card List Test Suite Conclusion",
-                "name": "Angular Testing Course",
-                "duration": "170",
-                "module": "angular-testing--course-card-list-conclusion",
-                "videoUrl": "https://player.vimeo.com/video/335090054"
-            },
-            {
-                "description": "Angular Test Debugging - How to Trigger Change Detection?",
-                "name": "Angular Testing Course",
-                "duration": "160",
-                "module": "angular-testing-debugging",
-                "videoUrl": "https://player.vimeo.com/video/335085214"
-            },
-            {
-                "description": "Angular Component Testing - DOM Interaction",
-                "name": "Angular Testing Course",
-                "duration": "150",
-                "module": "angular-testing-dom-interaction",
-                "videoUrl": "https://player.vimeo.com/video/335082422"
-            },
-            {
-                "description": "Angular Component Testing - Test Setup with the async Test Utility",
-                "name": "Angular Testing Course",
-                "duration": "140",
-                "module": "angular-testing-async-test-utility",
-                "videoUrl": "https://player.vimeo.com/video/333732584"
+                "id": 2,
+                "name": "Topic 2",
+                "lessons": [
+                    {
+                        "description": "Angular Test Debugging - How to Trigger Change Detection?",
+                        "name": "Angular Testing Course",
+                        "duration": "160",
+                        "module": "angular-testing-debugging",
+                        "videoUrl": "https://player.vimeo.com/video/335085214"
+                    },
+                    {
+                        "description": "Angular Component Testing - DOM Interaction",
+                        "name": "Angular Testing Course",
+                        "duration": "150",
+                        "module": "angular-testing-dom-interaction",
+                        "videoUrl": "https://player.vimeo.com/video/335082422"
+                    },
+                    {
+                        "description": "Angular Component Testing - Test Setup with the async Test Utility",
+                        "name": "Angular Testing Course",
+                        "duration": "140",
+                        "module": "angular-testing-async-test-utility",
+                        "videoUrl": "https://player.vimeo.com/video/333732584"
+                    }
+                ]
             }
         ]
     },
@@ -49,41 +61,59 @@
         "description": "Angular Component Testing - 2",
         "category": "Beginners",
         "iconUrl": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/83/e258e0532611e5a5072321239ff4d4/jhep-coursera-course4.png?auto=format%2Ccompress&dpr=2&w=80&h=80&fit=fill&bg=FFF",
-        "lessons": [
+        "section": [
             {
-                "description": "Testing Angular Smart or Container Components - Test Setup -2",
-                "name": "Angular Testing Course",
-                "duration": "180",
-                "module": "angular-testing-container-components",
-                "videoUrl": "https://player.vimeo.com/video/335359151"
+                "id": 1,
+                "name": "Topic 1",
+                "lessons": [
+                    {
+                        "description": "Testing Angular Smart or Container Components - Test Setup -2",
+                        "name": "Angular Testing Course",
+                        "duration": "180",
+                        "module": "angular-testing-container-components",
+                        "videoUrl": "https://player.vimeo.com/video/335359151",
+                    },
+                    {
+                        "description": "Angular Component Testing - Course Card List Test Suite Conclusion -2",
+                        "name": "Angular Testing Course",
+                        "duration": "170",
+                        "module": "angular-testing--course-card-list-conclusion",
+                        "videoUrl": "https://player.vimeo.com/video/335090054",
+                    }
+                ]
             },
             {
-                "description": "Angular Component Testing - Course Card List Test Suite Conclusion -2",
-                "name": "Angular Testing Course",
-                "duration": "170",
-                "module": "angular-testing--course-card-list-conclusion",
-                "videoUrl": "https://player.vimeo.com/video/335090054"
+                "id": 2,
+                "name": "Topic 2",
+                "lessons": [
+                    {
+                        "description": "Angular Test Debugging - How to Trigger Change Detection?",
+                        "name": "Angular Testing Course",
+                        "duration": "160",
+                        "module": "angular-testing-debugging",
+                        "videoUrl": "https://player.vimeo.com/video/335085214",
+                    },
+                    {
+                        "description": "Angular Component Testing - DOM Interaction",
+                        "name": "Angular Testing Course",
+                        "duration": "150",
+                        "module": "angular-testing-dom-interaction",
+                        "videoUrl": "https://player.vimeo.com/video/335082422",
+                    }
+                ]
             },
             {
-                "description": "Angular Test Debugging - How to Trigger Change Detection?",
-                "name": "Angular Testing Course",
-                "duration": "160",
-                "module": "angular-testing-debugging",
-                "videoUrl": "https://player.vimeo.com/video/335085214"
-            },
-            {
-                "description": "Angular Component Testing - DOM Interaction",
-                "name": "Angular Testing Course",
-                "duration": "150",
-                "module": "angular-testing-dom-interaction",
-                "videoUrl": "https://player.vimeo.com/video/335082422"
-            },
-            {
-                "description": "Angular Component Testing - Test Setup with the async Test Utility",
-                "name": "Angular Testing Course",
-                "duration": "140",
-                "module": "angular-testing-async-test-utility",
-                "videoUrl": "https://player.vimeo.com/video/333732584"
+                "id": 1,
+                "name": "Topic 3",
+                "lessons": [
+                    {
+                        "description": "Angular Component Testing - Test Setup with the async Test Utility",
+                        "name": "Angular Testing Course",
+                        "duration": "140",
+                        "module": "angular-testing-async-test-utility",
+                        "videoUrl": "https://player.vimeo.com/video/333732584",
+                    }
+                ]
             }
         ]
     }
